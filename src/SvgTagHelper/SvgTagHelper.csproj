@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Citizen17.SvgTagHelper</RootNamespace>
+    <AssemblyName>Citizen17.SvgTagHelper</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Mikhail Kislenko</Authors>
+    <Company />
+    <Product>SvgTagHelper</Product>
+    <Description>Tag helper for loading SVG content into HTML</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>svg tag helper taghelper</PackageTags>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+</Project>

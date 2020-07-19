@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Citizen17.FontAwesomeTagHelper</AssemblyName>
+    <RootNamespace>Citizen17.FontAwesomeTagHelper</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Mikhail Kislenko</Authors>
+    <Company />
+    <Product>FontAwesomeTagHelper</Product>
+    <Description>Tag helper for loading Font Awesome SVG</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SvgTagHelper\SvgTagHelper.csproj" />
+  </ItemGroup>
+
+</Project>
