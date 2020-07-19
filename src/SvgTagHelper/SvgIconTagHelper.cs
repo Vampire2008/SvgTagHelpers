@@ -23,6 +23,11 @@ namespace Citizen17.SvgTagHelper
 		/// </summary>
 		public string File { get; set; }
 
+		/// <summary>
+		/// Sets tag that wraps svg. By default it span.
+		/// </summary>
+		public string Tag { get; set; } = "span";
+
 		protected string GetPath(string path)
 		{
 			return Path.IsPathRooted(path)
@@ -39,7 +44,7 @@ namespace Citizen17.SvgTagHelper
 				throw new ArgumentNullException(nameof(File));
 			}
 			var path = GetPath(File);
-			output.TagName = "span";
+			output.TagName = Tag;
 			output.TagMode = TagMode.StartTagAndEndTag;
 			output.Content.SetHtmlContent(System.IO.File.ReadAllText(path));
 		}

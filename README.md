@@ -29,6 +29,8 @@ Result HTML:
 
 Library supports absolute paths (`C:/MyIcons/file.svg`), relative to project root (`assets/icons/file.svg`) and relative to web root (`~/icons/file.svg`).
 
+Also TagHelper has parameter `tag` if you want change tag that wraps svg.
+
 ## FontAwesomeTagHelper
 
 Uses same behavor as SvgIconTagHelper but add ability to choose icon from FontAwesome. It required installed FontAwesome package (npm/yarn prefered).
