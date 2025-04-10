@@ -1,32 +1,29 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Citizen17.FontAwesomeTagHelper;
 
-namespace Samples
+var builder = WebApplication.CreateBuilder(args); 
+builder.Services.AddRazorPages();
+builder.Services.Configure<FontAwesomeOptions>(options =>
 {
-	public class Program
-	{
-		public static void Main(string[] args)
-		{
-			CreateHostBuilder(args).Build().Run();
-		}
+    options.Set = FontAwesomeSet.Brands;
+});
 
-		public static IHostBuilder CreateHostBuilder(string[] args) =>
-			Host.CreateDefaultBuilder(args)
-				.ConfigureWebHostDefaults(webBuilder =>
-				{
-					webBuilder.ConfigureLogging(loggerBuilder =>
-					{
-						loggerBuilder.ClearProviders();
-						loggerBuilder.AddConsole();
-						loggerBuilder.AddDebug();
-					});
-					webBuilder.UseStartup<Startup>();
-				});
-	}
+var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
 }
+else
+{
+    app.UseExceptionHandler("/Error");
+}
+
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapRazorPages();
+
+app.Run();

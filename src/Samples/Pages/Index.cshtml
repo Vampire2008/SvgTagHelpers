@@ -4,10 +4,18 @@
 	ViewData["Title"] = "Home page";
 }
 
+<style>
+	.icon {
+		width: 50px;
+		height: 50px;
+		display: block;
+	}
+</style>
+
 <div class="text-center">
 	<h1 class="display-4">Welcome</h1>
 	<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-	<!--<svg-icon file="node_modules/@@fortawesome/fontawesome-free/svgs/solid/bicycle.svg">-->
-	<font-awesome icon="amazon" tag="i" />
-	<font-awesome icon="adn" />
+    <svg-icon file="node_modules/@@fortawesome/fontawesome-free/svgs/solid/bicycle.svg" class="icon" />
+	<font-awesome icon="amazon" tag="i" class="icon" />
+	<font-awesome icon="adn" class="icon" />
 </div>

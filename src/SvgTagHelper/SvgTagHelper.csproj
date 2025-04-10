@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFrameworks>net60;net80</TargetFrameworks>
     <RootNamespace>Citizen17.SvgTagHelper</RootNamespace>
     <AssemblyName>Citizen17.SvgTagHelper</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -11,9 +11,13 @@
     <Description>Tag helper for loading SVG content into HTML</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>svg tag helper taghelper</PackageTags>
-    <Version>1.1.0</Version>
+    <Version>2.0.0</Version>
     <RepositoryUrl>https://github.com/Vampire2008/SvgTagHelpers</RepositoryUrl>
-    <RepositoryType>GITHUB</RepositoryType>
+    <RepositoryType></RepositoryType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageReleaseNotes>v2.0.0:
+ * Updated target framework to .NET 6 and .NET 8</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

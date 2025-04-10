@@ -1,11 +1,11 @@
-﻿namespace Citizen17.FontAwesomeTagHelper
+﻿namespace Citizen17.FontAwesomeTagHelper;
+
+public enum FontAwesomeSet
 {
-	public enum FontAwesomeSet
-	{
-		Solid,
-		Regular,
-		Light,
-		Duotone,
-		Brands
-	}
+    Solid,
+    Regular,
+    Light,
+    Duotone,
+    Brands,
+    Thin
 }
